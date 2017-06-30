@@ -52,7 +52,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    margin: 0px;
+    margin: 0;
   }
   #app {
     margin: 0 auto;
@@ -67,13 +67,13 @@
   .restart {
     background-color: #e74c3c;
     color: #fff;
-    border: 0px;
+    border: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: 'Dosis', Helvetica, sans-serif;
     font-size: 1.4em;
     font-weight: bold;
-    margin: 0px;
+    margin: 0;
     padding: 15px;
     width: 100%;
   }
@@ -94,7 +94,7 @@
     overflow-x: none;
   }
   .scoreBoard h2 {
-    margin: 0px;
+    margin: 0;
   }
   .scoreBoard span {
     float: right;

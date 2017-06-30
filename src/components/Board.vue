@@ -99,13 +99,18 @@
         }
         return 'turn'
       },
-      areEqual () {
-        var len = arguments.length;
-        for (var i = 1; i < len; i++) {
-          if (arguments[i] === '' || arguments[i] !== arguments[i - 1])
-            return false;
+      areEqual (...args) {
+        let areArgumentsEqual = true
+        const len = args.length
+        let i = 1
+
+        while (i < len ) {
+          if (args[i] === '' || args[i] !== args[i - 1])
+            areArgumentsEqual = false
+          i++
         }
-        return true;
+
+        return areArgumentsEqual
       }
     },
     created () {
