@@ -75,14 +75,15 @@
         this.activePlayer = this.nonActivePlayer
       },
       checkForWin () {
-        for (let i = 0; i < this.winConditions.length; i++) {
-          let wc = this.winConditions[i]
+        let isWin = false
+
+        this.winConditions.forEach((condition) => {
           let cells = this.cells
-          if (this.areEqual(cells[wc[0]], cells[wc[1]], cells[wc[2]])) {
-            return true
+          if (this.areEqual(cells[condition[0]], cells[condition[1]], cells[condition[2]])) {
+            isWin = true
           }
-        }
-        return false
+        })
+        return isWin
       },
       gameIsWon () {
         Event.$emit('win', this.activePlayer)
