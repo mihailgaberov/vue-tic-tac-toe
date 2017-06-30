@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-window.Evebnt= new Vue()
+window.Evebnt = new Vue()
 
 new Vue({
   el: '#app',

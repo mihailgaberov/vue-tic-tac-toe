@@ -10,7 +10,7 @@
         <h1>Tic Tac Toe</h1>
         <h2>Match #{{ matches + 1 }}</h2>
       </div>
-      <grid></grid>
+      <board></board>
       <button class="restart" @click="restart">Restart</button>
     </div>
   </div>
@@ -18,6 +18,7 @@
 
 <script>
   import Board from './components/Board.vue'
+
   export default {
     components: { Board },
     name: 'app',
